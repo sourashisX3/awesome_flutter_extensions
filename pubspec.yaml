@@ -1,10 +1,10 @@
-name: awesome_flutter_extensions
-description: "A lightweight Flutter utility package providing useful extension methods for widgets, context, strings, numbers, and more — designed to write cleaner, more expressive, and maintainable code."
+name: modern_extensions_flutter
+description: "A lightweight Flutter utility package providing modern extension methods for widgets, context, strings, numbers, and more — write cleaner, more expressive, and maintainable Flutter code."
 version: 0.0.1
-homepage: https://github.com/sourashisX3/awesome_flutter_extensions
-repository: https://github.com/sourashisX3/awesome_flutter_extensions
-issue_tracker: https://github.com/sourashisX3/awesome_flutter_extensions/issues
-documentation: https://github.com/sourashisX3/awesome_flutter_extensions#readme
+homepage: https://github.com/sourashisX3/modern_extensions_flutter
+repository: https://github.com/sourashisX3/modern_extensions_flutter
+issue_tracker: https://github.com/sourashisX3/modern_extensions_flutter/issues
+documentation: https://github.com/sourashisX3/modern_extensions_flutter#readme
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

@@ -12,13 +12,13 @@ Getting started
 
 ```yaml
 dependencies:
-  awesome_flutter_extensions: ^0.0.1
+  modern_extensions_flutter: ^0.0.1
 ```
 
 2. Import the package in Dart files:
 
 ```dart
-import 'package:awesome_flutter_extensions/awesome_flutter_extensions.dart';
+import 'package:modern_extensions_flutter/modern_extensions_flutter.dart';
 ```
 
 Usage

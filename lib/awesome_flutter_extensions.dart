@@ -6,6 +6,10 @@
 /// import 'package:awesome_flutter_extensions/awesome_flutter_extensions.dart';
 /// ```
 
-library awesome_flutter_extensions;
+/// Deprecated compatibility entrypoint.
+///
+/// Historically the package used the `awesome_flutter_extensions` name. The
+/// canonical package name is now `modern_extensions_flutter`. This file
+/// re-exports the new entrypoint to preserve backward compatibility.
 
-export 'widget_extensions.dart';
+export 'exports/modern_extensions_flutter.dart';

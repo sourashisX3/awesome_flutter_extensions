@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:awesome_flutter_extensions/awesome_flutter_extensions.dart';
+import 'package:modern_extensions_flutter/exports/modern_extensions_flutter.dart';
 
 void main() {
   testWidgets('PaddingExtensions.paddingAll wraps widget with correct padding',
@@ -45,7 +45,10 @@ void main() {
     );
 
     await tester.pumpWidget(all);
-    final c1 = tester.widget<Container>(find.byType(Container));
+    final c1Finder = find.byWidgetPredicate(
+      (w) => w is Container && (w).margin != null,
+    );
+    final c1 = tester.widget<Container>(c1Finder);
     expect(c1.margin, EdgeInsets.all(8));
 
     final only = Directionality(
@@ -54,7 +57,10 @@ void main() {
     );
 
     await tester.pumpWidget(only);
-    final c2 = tester.widget<Container>(find.byType(Container));
+    final c2Finder = find.byWidgetPredicate(
+      (w) => w is Container && (w as Container).margin != null,
+    );
+    final c2 = tester.widget<Container>(c2Finder);
     expect(c2.margin, EdgeInsets.only(left: 1, top: 2, right: 3, bottom: 4));
   });
 

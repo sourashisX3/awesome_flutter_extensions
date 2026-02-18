@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:awesome_flutter_extensions/awesome_flutter_extensions.dart';
+import 'package:modern_extensions_flutter/exports/modern_extensions_flutter.dart';
 
 void main() {
   test('adds one to input values', () {
