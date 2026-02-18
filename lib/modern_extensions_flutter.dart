@@ -1,3 +1,7 @@
+export 'exports/widgets/widget_extensions.dart';
+export 'src/num_extensions/size/size_extensions.dart';
+export 'src/num_extensions/screen_utils/screen_size_utils_extensions.dart';
+
 /// Awesome Flutter Extensions
 ///
 /// Public package entrypoint. Re-exports extension libraries for easy import:

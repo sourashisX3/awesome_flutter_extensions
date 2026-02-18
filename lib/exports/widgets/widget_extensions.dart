@@ -4,3 +4,5 @@
 export '../../src/widget_extensions/alignment/alignment_extensions.dart';
 export '../../src/widget_extensions/margin/margin_extensions.dart';
 export '../../src/widget_extensions/padding/padding_extensions.dart';
+export '../../src/widget_extensions/flex/flex_extensions.dart';
+export '../../src/widget_extensions/ontap/ontap_extensions.dart';

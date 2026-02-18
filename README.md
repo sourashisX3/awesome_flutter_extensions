@@ -1,56 +1,84 @@
-A collection of small, focused Flutter extension methods to make common
-widget transformations concise and expressive.
+# modern_extensions_flutter
 
-Features
+A focused collection of small, dependency-free Flutter extension methods that make common
+widget transformations and numeric helpers concise and expressive.
 
-- Widget extensions for alignment, padding, and margin.
-- Small, dependency-free helpers that wrap standard Flutter widgets.
+## What’s included
 
-Getting started
+- Widget extensions
+  - Alignment helpers (`alignTopLeft`, `alignCenter`, `alignOnly`, `alignDirectional`, ...)
+  - Padding helpers (`paddingAll`, `paddingOnly`, `paddingFromLTRB`, `paddingZero`, ...)
+  - Margin helpers (`marginAll`, `marginOnly`, `marginSymmetric`, ...)
+  - Flex helpers (`toFlexible`, `toExpanded`)
+  - Interaction helpers (`onTap`, `onTapInkWell`, `onDoubleTap`, ...)
+- Numeric extensions
+  - `Size` helpers (`size`, `widthSize`, `heightSize`, `sizeWith*`, ...)
+  - Screen-responsive helpers (`h`, `w`, `sp`, `r`, `dp`) that compute percentages of the
+    current `MediaQuery` size.
 
-1. Add the package to your `pubspec.yaml` (when published):
+More extensions are planned and will be added to the public exports as they land.
+
+## Quick start
+
+Add the package to your `pubspec.yaml` (when published):
 
 ```yaml
 dependencies:
   modern_extensions_flutter: ^0.0.1
 ```
 
-2. Import the package in Dart files:
+Import the package in your Dart files:
 
 ```dart
 import 'package:modern_extensions_flutter/modern_extensions_flutter.dart';
 ```
 
-Usage
+Then use the helpers directly on widgets or numbers:
 
 ```dart
 Container(color: Colors.blue, width: 100, height: 100)
   .paddingAll(12)
   .alignCenter();
+
+final s = 50.size; // Size(50,50)
+final tenPercentHeight = 10.h(context);
 ```
 
-Example
+## Example app
 
-See the `example/` folder for a minimal runnable app demonstrating usage.
+Open and run the `example/` app to see small demo pages that exercise the
+extensions (Widgets, Numeric/Screen, Interactions):
 
-Running tests
+```bash
+cd example
+flutter run
+```
+
+## Running tests
+
+Run the package tests locally:
 
 ```bash
 flutter test
 ```
 
-Publishing checklist
+## Project structure
 
-- Ensure `version` in `pubspec.yaml` follows semver and matches `CHANGELOG.md`.
-- Run `flutter analyze --fatal-infos` and fix warnings.
-- Run `dart format --set-exit-if-changed .` to format code.
-- Run `flutter test` and ensure tests pass.
-- Remove `publish_to: none` if present.
+- `lib/exports/` — grouped public re-exports you can import from the package root.
+- `lib/src/` — private implementation files (extensions grouped by feature).
+- `example/` — small demo app with pages showing extension usage.
+- `test/` — unit and widget tests covering core extensions.
 
-Contributing
+## Roadmap
 
-Contributions are welcome — open issues or PRs on GitHub.
+- Add more extension groups (String, DateTime, List helpers).
+- Improve coverage and add CI for analyze/format/test.
 
-License
+## Contributing
 
-This project is licensed under the terms in the `LICENSE` file.
+Contributions welcome — open issues or PRs. Please follow the existing code style
+and add tests for new behavior.
+
+## License
+
+See the `LICENSE` file in the repository.

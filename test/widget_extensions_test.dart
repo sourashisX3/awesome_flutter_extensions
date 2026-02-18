@@ -58,7 +58,7 @@ void main() {
 
     await tester.pumpWidget(only);
     final c2Finder = find.byWidgetPredicate(
-      (w) => w is Container && (w as Container).margin != null,
+      (w) => w is Container && (w).margin != null,
     );
     final c2 = tester.widget<Container>(c2Finder);
     expect(c2.margin, EdgeInsets.only(left: 1, top: 2, right: 3, bottom: 4));
