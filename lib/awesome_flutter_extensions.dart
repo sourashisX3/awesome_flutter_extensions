@@ -1,5 +1,11 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+/// Awesome Flutter Extensions
+///
+/// Public package entrypoint. Re-exports extension libraries for easy import:
+///
+/// ```dart
+/// import 'package:awesome_flutter_extensions/awesome_flutter_extensions.dart';
+/// ```
+
+library awesome_flutter_extensions;
+
+export 'widget_extensions.dart';

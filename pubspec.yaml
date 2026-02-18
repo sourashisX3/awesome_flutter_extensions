@@ -1,11 +1,14 @@
 name: awesome_flutter_extensions
 description: "A lightweight Flutter utility package providing useful extension methods for widgets, context, strings, numbers, and more — designed to write cleaner, more expressive, and maintainable code."
 version: 0.0.1
-homepage:
+homepage: https://github.com/sourashisX3/awesome_flutter_extensions
+repository: https://github.com/sourashisX3/awesome_flutter_extensions
+issue_tracker: https://github.com/sourashisX3/awesome_flutter_extensions/issues
+documentation: https://github.com/sourashisX3/awesome_flutter_extensions#readme
 
 environment:
-  sdk: ^3.10.3
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
