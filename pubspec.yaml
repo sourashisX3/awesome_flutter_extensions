@@ -1,5 +1,5 @@
 name: awesome_flutter_extensions
-description: "A new Flutter package project."
+description: "A lightweight Flutter utility package providing useful extension methods for widgets, context, strings, numbers, and more — designed to write cleaner, more expressive, and maintainable code."
 version: 0.0.1
 homepage:
 
